@@ -6,15 +6,20 @@
     >
       <v-row no-gutters align="center">
         <v-col cols="2">
-          <div class="d-flex align-center">
-            <v-img
-              alt="Avatar"
-              class="shrink mr-2 rounded-circle"
-              src="https://avatars.githubusercontent.com/u/11656323?s=400&u=47f0363916b2a96d69507b6fdd55418a5ddd4b2a&v=4"
-              width="40"
-            />
-            Jonathon Derr
-          </div>
+          <v-row no-gutters align="center">
+            <v-col cols="4">
+              <v-img
+                  alt="Avatar"
+                  class="rounded"
+                  height="50"
+                  width="50"
+                  src="https://avatars.githubusercontent.com/u/11656323?s=400&u=47f0363916b2a96d69507b6fdd55418a5ddd4b2a&v=4"
+                />
+            </v-col>
+            <v-col cols="8">
+              Jonathon Derr
+            </v-col>
+          </v-row>
         </v-col>
         <v-col cols="10">
           <v-row no-gutters justify="end">
@@ -48,3 +53,9 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+ .debug {
+   background-color: red;
+ }
+</style>
