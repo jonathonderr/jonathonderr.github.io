@@ -21,4 +21,4 @@ jobs:
         REPO: git@github.com:jonathonderr/jonathonderr.github.io.git
         BRANCH: gh-pages
         FOLDER: dist
-        SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
+        SSH_PRIVATE_KEY: test
