@@ -17,7 +17,7 @@
                 />
             </v-col>
             <v-col cols="8">
-              Jonathon Derr
+              <h3>Jonathon Derr</h3>
             </v-col>
           </v-row>
         </v-col>
@@ -25,9 +25,9 @@
           <v-row no-gutters justify="end">
             <v-cols col="10">
               <v-tabs>
-                <v-tab>Projects</v-tab>
-                <v-tab>Education</v-tab>
                 <v-tab>About Me</v-tab>
+                <v-tab>Projects</v-tab>
+                <v-tab>Resume</v-tab>
               </v-tabs>
             </v-cols>
           </v-row>
