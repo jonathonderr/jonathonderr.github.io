@@ -38,7 +38,6 @@ jobs:
     - name: Generate RSS Feed
       run: |
         cd public/files/testpodcast
-        cat ./channel.yml
         dropcaster > index.rss
         git add index.rss
 
