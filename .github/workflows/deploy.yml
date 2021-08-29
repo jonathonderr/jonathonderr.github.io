@@ -2,6 +2,7 @@ name: deploy
 on: [push]
 jobs:
   deploy:
+    needs: generate-rss-feed
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest    
     steps:
@@ -23,7 +24,6 @@ jobs:
         FOLDER: dist
         SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }} 
   generate-rss-feed:
-    needs: deploy
     name: Generates RSS Feed
     runs-on: ubuntu-latest    
     steps:
