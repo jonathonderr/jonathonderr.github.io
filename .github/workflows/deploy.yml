@@ -29,6 +29,5 @@ jobs:
     - uses: actions/checkout@master
 
     - name: Create File
-      run: |
-        cd public/files
-        touch file.txt
+      run:
+        cd public/files && touch file.txt
