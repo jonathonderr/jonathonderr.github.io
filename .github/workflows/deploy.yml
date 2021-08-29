@@ -22,3 +22,13 @@ jobs:
         BRANCH: gh-pages
         FOLDER: dist
         SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }} 
+  generate-rss-feed:
+    name: Generates RSS Feed
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Create File
+    - run: |
+        cd public/files
+        touch file.txt
