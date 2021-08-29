@@ -1,0 +1,31 @@
+:title: 'Test Podcast'
+:description: 'A Test Podcast'
+:url: 'google.com'
+
+:image_url: 'https://jonathonderr.github.io/files/testpodcast/test.jpg'
+
+#
+# Category / categories of the podcast
+#
+# For iTunes, see http://www.apple.com/itunes/podcasts/specs.html#categories for applicable values
+#
+# Examples:
+#   :categories: 'Technology'
+#   :categories: ['Technology', 'Gadgets']
+#   :categories: ['TV & Film', ['Technology', 'Gadgets']]
+#
+# Don't HTML-escape the categories, this will be taken care of by Dropcaster
+#
+:categories: ['Technology', 'Gadgets']
+
+#
+# Yes, No or Clean, see http://www.apple.com/itunes/podcasts/specs.html#explicit
+#
+:explicit: No
+
+#
+# Keywords
+#
+# Apple recommends to use not more than 12 keywords
+#
+:keywords: [salt, pepper, shaker, exciting]
