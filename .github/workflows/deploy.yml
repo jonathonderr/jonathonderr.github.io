@@ -30,4 +30,4 @@ jobs:
 
     - name: Create File
       run:
-        cd public/files && pwd
+        echo 'Hey' > test.txt
