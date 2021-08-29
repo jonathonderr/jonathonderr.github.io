@@ -33,11 +33,12 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
     - name: Install Dropcaster
-      run: gem install dropcaster && dropcaster --help
+      run: gem install dropcaster
 
     - name: Navigate to Podcast
       run: |
         cd public/files/testpodcast
+        ls
 
     - name: Generate RSS Feed
       run: |
