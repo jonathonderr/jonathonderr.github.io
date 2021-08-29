@@ -29,8 +29,9 @@ jobs:
     - uses: actions/checkout@master
 
     - name: Create File
-      run:
+      run: |
         echo 'Hey' > test.txt
+        git add test.txt
 
     - name: Commit files
       run: |
