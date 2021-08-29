@@ -30,4 +30,4 @@ jobs:
 
     - name: Create File
       run:
-        cd public/files && touch file.txt
+        cd public/files && pwd
