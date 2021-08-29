@@ -38,7 +38,12 @@ jobs:
     - name: Navigate to Podcast
       run: |
         cd public/files/testpodcast
-        
+
+    - name: Generate RSS Feed
+      run: |
+        dropcaster > index.rss
+        git add index.rss
+
     - name: Commit files
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
