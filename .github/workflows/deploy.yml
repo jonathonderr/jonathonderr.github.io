@@ -24,11 +24,11 @@ jobs:
         SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }} 
   generate-rss-feed:
     name: Generates RSS Feed
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest    
     steps:
     - uses: actions/checkout@master
 
     - name: Create File
-    - run: |
+      run: |
         cd public/files
         touch file.txt
