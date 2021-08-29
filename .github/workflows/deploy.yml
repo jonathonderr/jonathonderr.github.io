@@ -33,13 +33,13 @@ jobs:
         echo 'Hey' > test.txt
 
     - name: Commit files
-    run: |
+      run: |
       git config --local user.email "github-actions[bot]@users.noreply.github.com"
       git config --local user.name "github-actions[bot]"
       git commit -m "Add changes" -a
 
     - name: Push changes
-    uses: ad-m/github-push-action@master
-    with:
-      github_token: ${{ secrets.DEPLOY_PRIVATE_KEY }}
-      branch: ${{ github.ref }}
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.DEPLOY_PRIVATE_KEY }}
+        branch: ${{ github.ref }}
